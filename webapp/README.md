@@ -17,28 +17,28 @@ This application is built using Javascript and SQL principles, deriving style in
 - Open http://localhost:3000 in your browser or press ctrl and click on the link shown on your terminal to navigate to the webapp.
 
 ### Webapp Interface Brief:
-    - **Home**
-        - Has 8 cards dynamically created and stacked vertically with buttons to generate the desired report or to view the output of the sql questions given in the challenge. It curbs the redundance of code while using minimal static HTML code.
-        - There are 4 Reports and 4 SQL queries, 2 of the Reports are based on user input.
-    - **Real Website :)**
-        - Link to go to the real Smartrr Website. (for funsies)
+- **Home**
+    - Has 8 cards dynamically created and stacked vertically with buttons to generate the desired report or to view the output of the sql questions given in the challenge. It curbs the redundance of code while using minimal static HTML code.
+    - There are 4 Reports and 4 SQL queries, 2 of the Reports are based on user input.
+- **Real Website :)**
+    - Link to go to the real Smartrr Website. (for funsies)
     
 ### Code:
-    - **server.js**
-        - This is the back-end of the webapp.
-        - The database connection and population is done here.
-        - Contains all the API endpoints that the front-end uses.
-        - Contents (Number of processes/functions):
-            - 2 async fetch functions that use the Google Script Webapp to get data from the given google scpreadsheet.
-            - 3 API endpoints using Javascript for the Report Generation.
-            - 4 API endpoints for the SQL questions given in the challenge.
-            - 3 Helper functions:
-                - ArrayToJson : converts the array response in the async fetch functions to JSON for the js-based API endpoints.
-                - FormatDate :  converts date from ISO 8601 to DD/MM/YYYY.
-                - ToUpper : formats json keys to upper case.
-    - **./webapp/public**
-        - Directory for the front-end of the webapp.
-        - Contents:
-            - index.html : HTML file for the UI.
-            - script.js  : Dynamicallly adds HTML elements and the respective functionalities to the app-container in index.html.
-            - styles.css : CSS file that describes the various style classes for the HTML elements used.
+- **server.js**
+    - This is the back-end of the webapp.
+    - The database connection and population is done here.
+    - Contains all the API endpoints that the front-end uses.
+    - Contents (Number of processes/functions):
+        - 2 async fetch functions that use the Google Script Webapp to get data from the given google scpreadsheet.
+        - 3 API endpoints using Javascript for the Report Generation.
+        - 4 API endpoints for the SQL questions given in the challenge.
+        - 3 Helper functions:
+            - ArrayToJson : converts the array response in the async fetch functions to JSON for the js-based API endpoints.
+            - FormatDate :  converts date from ISO 8601 to DD/MM/YYYY.
+            - ToUpper : formats json keys to upper case.
+- **./webapp/public**
+    - Directory for the front-end of the webapp.
+    - Contents:
+        - index.html : HTML file for the UI.
+        - script.js  : Dynamicallly adds HTML elements and the respective functionalities to the app-container in index.html.
+        - styles.css : CSS file that describes the various style classes for the HTML elements used.
