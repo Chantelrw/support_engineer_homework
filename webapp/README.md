@@ -16,14 +16,14 @@ This application is built using Javascript and SQL principles, deriving style in
 - Wait for messages "Organization Data Loaded" and "Accounts Data Loaded" displayed on console, and only thereafter proceed to the next step to use the webapp. 
 - Open http://localhost:3000 in your browser or press ctrl and click on the link shown on your terminal to navigate to the webapp.
 
-### Webapp Interface Brief:
+## Webapp Interface Brief:
 - **Home**
     - Has 8 cards dynamically created and stacked vertically with buttons to generate the desired report or to view the output of the sql questions given in the challenge. It curbs the redundance of code while using minimal static HTML code.
     - There are 4 Reports and 4 SQL queries, 2 of the Reports are based on user input.
 - **Real Website :)**
     - Link to go to the real Smartrr Website. (for funsies)
     
-### Code:
+## Code:
 - **server.js**
     - This is the back-end of the webapp.
     - The database connection and population is done here.
